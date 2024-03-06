@@ -1,0 +1,75 @@
+.border {
+  border: 2px solid red;
+  margin: 3px;
+}
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.item-center {
+  align-items: center;
+}
+.bg-black {
+  background-color: #121212;
+  color: white;
+}
+.invert {
+  filter: invert(1);
+}
+
+.bg-gray {
+  background-color: #201d1d;
+}
+.rounded {
+  border-radius: 10px;
+}
+.m-1 {
+  margin: 5px;
+}
+.p-1 {
+  padding: 10px;
+}
+.buttons {
+margin: 0px 12px;
+}
+
+
+
+  /* Style for the scrollbar track */
+        ::-webkit-scrollbar {
+            width: 10px; /* width of the scrollbar */
+        }
+
+        /* Style for the scrollbar thumb (the draggable part) */
+        ::-webkit-scrollbar-thumb {
+            background-color: #888; /* color of the thumb */
+            border-radius: 5px; /* rounded corners */
+            border: 2px solid #555; /* border around the thumb */
+        }
+
+        /* Style for the scrollbar track when being hovered */
+        ::-webkit-scrollbar-track:hover {
+            background-color: #ddd; /* color of the track */
+        }
+
+        /* Style for the scrollbar thumb when being hovered */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #666; /* color of the thumb when hovered */
+        }
+
+        /* Style for the scrollbar track when being dragged */
+        ::-webkit-scrollbar-thumb:active {
+            background-color: #555; /* color of the thumb when dragged */
+        }
+        
+        /* Style for the container with scrollbar */
+        .scroll-container {
+            width: 300px;
+            height: 200px;
+            overflow-y: scroll; /* allow vertical scrolling */
+            border: 1px solid #ccc; /* border around the container */
+            padding: 10px; /* padding inside the container */
+        }
