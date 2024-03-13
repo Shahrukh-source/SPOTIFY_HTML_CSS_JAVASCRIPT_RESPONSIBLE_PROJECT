@@ -151,7 +151,7 @@ body {
   width: 90%;
   width: 70vw;
   filter: invert();
-  height: 40px;
+  min-height: 40px;
   padding: 12px;
   border: 2px solid black;
   border-radius: 20px;
@@ -173,11 +173,11 @@ body {
 
 .songlist ul li {
   list-style-type: decimal;
-justify-content: space-between;
+  justify-content: space-between;
   display: flex;
   gap: 30px;
   top: 5px;
-  
+
   padding: 12px 0;
   cursor: pointer;
   border: 2px solid white;
@@ -196,8 +196,11 @@ justify-content: space-between;
   border: 2px solid black;
   border-radius: 10px;
   position: absolute;
-
+  cursor: pointer;
   bottom: 0px;
+}
+.seekbar{
+  width: calc(100vw-70px);
 }
 .circle {
   width: 23px;
@@ -210,4 +213,51 @@ justify-content: space-between;
   bottom: 6px;
   left: 0%;
   transition: left 0.5s;
+}
+
+.songbuttons img {
+  cursor: pointer;
+}
+
+.abovebar {
+  display: flex;
+  justify-content: center;
+}
+.songinfo,
+.songtime {
+  color: white;
+  padding: 0px 12px;
+}
+.hamburger {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.left .close {
+  position: absolute;
+  right: 31px;
+  top: 25px;
+  width: 29px;
+}
+@media (max-width: 1400px) {
+  .left {
+    position: absolute;
+    left: -120%;
+    transition: all 0.3s;
+    z-index: 1;
+    width: 233px;
+    background-color: black;
+  }
+  .right {
+    width: 100vw;
+  }
+  .playbar {
+    width: 98vw;
+  }
+  .hamburger {
+    display: block;
+  }
 }

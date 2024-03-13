@@ -48,3 +48,14 @@ async function main() {
   audio.play();
 }
 main();
+
+
+//   audio.addEventListener("loadeddata", () => {
+//     let duration = audio.duration;
+//     console.log(audio.duration, audio.currentSrc, audio.currentTime);
+//     // The duration variable now holds the duration (in seconds) of the audio clip
+//   });
+
+// add event listner
+
+// playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
